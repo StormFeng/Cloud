@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+    <com.lida.cloud.widght.SelectFilterView
+        android:id="@+id/selectedView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.lida.cloud.widght.SelectFilterView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/bg_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:visibility="gone" />
+        <com.lida.cloud.widght.DimedView
+            android:id="@+id/dimedView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="gone">
+        </com.lida.cloud.widght.DimedView>
+    </RelativeLayout>
+</LinearLayout>

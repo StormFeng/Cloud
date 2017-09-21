@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="请输入举报内容"
+        android:gravity="start"
+        android:textSize="13sp"
+        android:padding="10dp"
+        android:minHeight="100dp"
+        android:background="@drawable/shape_gray5radiu_stroke"/>
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_red5radiu_solid"
+        android:text="举报"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_margin="20dp"/>
+</LinearLayout>

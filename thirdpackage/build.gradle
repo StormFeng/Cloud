@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+        }
+
+    }
+}
+
+ext {
+    supportLibVersion = "25.1.0"
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    compile "com.android.support:recyclerview-v7:$supportLibVersion"
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/umeng-analytics-v5.2.4.jar')
+    compile files('libs/universal-image-loader-1.9.2.jar')
+    compile files('libs/nineoldandroids-library-2.4.0.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.apkfuns.logutils:library:1.4.2'
+    compile 'com.jaeger.statusbaruitl:library:1.2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'com.github.hackware1993:MagicIndicator:1.4.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    compile 'com.github.k0shk0sh:PermissionHelper:1.0.11'//权限库
+}

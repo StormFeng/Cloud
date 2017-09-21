@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lida.cloud">
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.lida.cloud" />
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.lida.cloud"
+        android:protectionLevel="signature">
+    </permission>
+    <application
+        android:name=".app.BaseAppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity android:name=".activity.ActivityLogin"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主页面-->
+        <activity android:name=".activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--注册-->
+        <activity android:name=".activity.ActivityRegister"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--商家详情-->
+        <activity android:name=".activity.ActivityShopDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--累计结算-->
+        <activity android:name=".activity.ActivityYestodaySettlement"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--余额-->
+        <activity android:name=".activity.ActivityBalance"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--转账-->
+        <activity android:name=".activity.ActivityTransferMoney"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--转账-->
+        <activity android:name=".activity.ActivityTransferMoneyNext"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--提现-->
+        <activity android:name=".activity.ActivityGetMoney"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--我的银行卡-->
+        <activity android:name=".activity.ActivityMyCard"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--发卡银行-->
+        <activity android:name=".activity.ActivityBankList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--添加银行卡-->
+        <activity android:name=".activity.ActivityAddCard"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--我的推荐-->
+        <activity android:name=".activity.ActivityMyRecommend"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--我的订单-->
+        <activity android:name=".activity.ActivityMyBooks"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--收藏的商户-->
+        <activity android:name=".activity.ActivityCollection"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--设置-->
+        <activity android:name=".activity.ActivitySetting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--公告详情-->
+        <activity android:name=".activity.ActivityNoticeDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--会员升级-->
+        <activity android:name=".activity.ActivityMemberUpdate"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--个人资料-->
+        <activity android:name=".activity.ActivityPersonalData"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--粉丝公益-->
+        <activity android:name=".activity.ActivityFansWelfare"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--商户中心-->
+        <activity android:name=".activity.ActivityShopCenter"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--商户基本资料-->
+        <activity android:name=".activity.ActivityShopCenterDetail"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--库存积分-->
+        <activity android:name=".activity.ActivityKCJF"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--转出积分-->
+        <activity android:name=".activity.ActivityTurnOut"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--购买积分-->
+        <activity android:name=".activity.ActivityBuyJF"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--设置新密码-->
+        <activity android:name=".activity.ActivityForgetPass"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--申请成为商户-->
+        <activity android:name=".activity.ActivityApplyToShop"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--商户认证-->
+        <activity android:name=".activity.ActivityShopAuth"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--商品管理-->
+        <activity android:name=".activity.ActivityGoodManage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"/>
+        <!--修改密码-->
+        <activity android:name=".activity.ActivityFindPass"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--奖励的金额-->
+        <activity android:name=".activity.ActivityReward"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--奖励的积分-->
+        <activity android:name=".activity.ActivityRewardMark"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--&lt;!&ndash;推荐的商户&ndash;&gt;-->
+        <!--<activity android:name=".fragment.FragmentRecommendShop"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <!--&lt;!&ndash;推荐的会员&ndash;&gt;-->
+        <!--<activity android:name=".fragment.FragmentRecommendMem"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <!--举报商家-->
+        <activity android:name=".activity.ActivityReport"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--地图-->
+        <activity android:name=".activity.ActivityMap"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--关于我们-->
+        <activity android:name=".activity.ActivityAboutUs"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--用户注册协议-->
+        <activity android:name=".activity.ActivityAgreement"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--商家评论-->
+        <activity android:name=".activity.ActivityCommentList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--提交评论-->
+        <activity android:name=".activity.ActivityComment"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--商家搜索-->
+        <activity android:name=".activity.ActivitySearchResult"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--选择地区-->
+        <activity android:name=".activity.ActivityChooseArea"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--省份-->
+        <activity android:name=".activity.ActivityProvince"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--市-->
+        <activity android:name=".activity.ActivityCity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--区-->
+        <activity android:name=".activity.ActivityArea"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--提现-->
+        <activity android:name=".activity.ActivityWithdrawals"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--充值-->
+        <activity android:name=".activity.ActivityPayMoney"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--信呗-->
+        <activity android:name=".activity.ActivityLoan"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--余额明细-->
+        <activity android:name=".activity.ActivityBalanceDetailList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--信用积分明细-->
+        <activity android:name=".activity.ActivityMarkList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--提现时候实名认证-->
+        <activity android:name=".activity.ActivityAuth"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--支付宝支付-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="5koxQ4h3dLzqTOkVRrYdInhQUZ9kdxMd" />
+        <!--微博分享-->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--百度推送-->
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求-->
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.android.pushservice.PushService" android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.lida.cloud.bdpush"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.lida.cloud"
+            android:protectionLevel = "signature"
+            android:exported="true" />
+
+        <receiver android:name=".MyPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind、setTags等method的返回结果-->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 接收通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".activity.ActivityWeShopAuth" />
+
+        <provider
+            android:name=".util.BuglyFileProvider"
+            android:authorities="com.lida.cloud.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="name,resource"/>
+        </provider>
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="系统将于4月22号更新，给您造成不便敬请谅解！"
+    android:textSize="15sp"
+    android:textColor="#636161">
+
+</TextView>

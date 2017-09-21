@@ -1,0 +1,43 @@
+pass:cloud123
+
+alias:cloud
+
+输入密钥库口令:
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: cloud
+创建日期: 2017-5-20
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=lida, OU=lida, O=lida, L=lida, ST=lida, C=lida
+发布者: CN=lida, OU=lida, O=lida, L=lida, ST=lida, C=lida
+序列号: 28d7fe56
+有效期开始日期: Sat May 20 18:01:14 CST 2017, 截止日期: Wed May 14 18:01:14 CST
+2042
+证书指纹:
+         MD5: 3D:16:AE:71:FE:60:C8:88:CF:5E:59:A1:86:B5:37:DD
+         SHA1: 1A:42:A2:5F:38:7D:FB:79:E7:CA:0A:C9:8E:14:D3:D5:7F:37:EE:EB
+         SHA256: 8C:7E:1F:86:6B:0D:E4:30:D9:57:3F:BB:47:8D:EF:AF:C2:B9:27:A0:D2:
+4E:4C:61:3F:0C:A3:F1:56:E6:7E:BF
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 4E 3C E9 7E 10 F9 9D 66   D1 48 96 35 F9 4D 36 EB  N<.....f.H.5.M6.
+0010: 56 BE 36 F3                                        V.6.
+]
+]
+
+
+
+*******************************************
+*******************************************
